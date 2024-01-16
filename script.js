@@ -1499,7 +1499,7 @@ function autocomplete(text, option) {
           }
           let dropdownElement = document.createElement("DIV");
           dropdownElement.accessKey = option.array[i].name;
-          dropdownElement.innerHTML = option.array[i].name + " : " + option.array[i].description;
+          dropdownElement.innerHTML = option.array[i].name + " : " + option.array[i].description + " : " + option.array[i].price + "$";
           dropdownElement.setAttribute("id", "dropdownElements");
           dropdownElement.addEventListener("mousedown", function() {
             var curElements = document.getElementsByClassName("autocomplete-items");
